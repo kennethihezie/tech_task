@@ -1,0 +1,80 @@
+name: luvit
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  convex_bottom_bar: ^3.2.0
+  persistent_bottom_nav_bar_v2: ^4.2.8
+  http:
+  firebase_core: ^2.15.1
+  firebase_database: ^10.2.5
+  flutter_svg:
+  flutter_riverpod: ^2.3.6
+  get_it: ^7.2.0
+  equatable:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  retrofit_generator: ^7.0.1
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.0
+  freezed: ^2.3.4
+  freezed_annotation: ^2.2.0
+  flutter_gen_runner:
+  flutter_lints: ^2.0.0
+
+
+flutter_gen:
+  output: lib/common/gen/
+  integrations:
+    flutter_svg: true
+  assets:
+    enabled: true
+    outputs:
+      class_name: LuvitAssets
+      package_parameter_enabled: false
+
+  fonts:
+    outputs:
+      class_name: LuvitFonts
+      package_parameter_enabled: true
+
+
+flutter:
+  uses-material-design: true
+  generate: false
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+          weight: 500
+        - asset: assets/fonts/Nunito-Regular.ttf
+          weight: 400
+
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/images/svg/
+    - assets/images/png/
+
+#  fonts:
+#    - family: Nunito
+#      fonts:
+#        - asset: assets/fonts/Nunito-Regular.ttf
+#        - asset: assets/fonts/Nunito-ExtraBold.ttf
+#          style: italic
+#    - assets/png/
+#    - assets/svg/
